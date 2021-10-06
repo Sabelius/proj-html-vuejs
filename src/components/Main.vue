@@ -1,13 +1,19 @@
 <template>
-  <div></div>
+  <jumbotron />
 </template>
 
 <script>
-export default {
+import jumbotron from './jumbotron.vue';
 
-}
+export default {
+  name: "Main",
+  components:{
+      jumbotron,
+  }
+};
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import "../style/variables.scss";
 
 </style>

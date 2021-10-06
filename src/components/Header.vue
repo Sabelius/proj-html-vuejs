@@ -26,7 +26,6 @@ export default {
   name: "Header",
   data() {
     return {
-      currentIndex: 0,
       logo: {
         url: "#",
         logoImg: logoimg,
