@@ -3,6 +3,7 @@
     <jumbotron />
     <cardOne />
     <cardTwo />
+    <cardThree />
   </section>
 </template>
 
@@ -10,6 +11,7 @@
 import jumbotron from "./jumbotron.vue";
 import cardOne from "./cardOne.vue";
 import cardTwo from "./cardTwo.vue";
+import cardThree from "./cardThree.vue";
 
 export default {
   name: "Main",
@@ -17,6 +19,7 @@ export default {
     jumbotron,
     cardOne,
     cardTwo,
+    cardThree,
   },
 };
 </script>

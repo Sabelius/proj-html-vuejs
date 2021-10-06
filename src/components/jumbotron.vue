@@ -13,7 +13,7 @@
             ea? Veniam ratione iure voluptates mollitia pariatur ut, distinctio
             alias sapiente minima.
           </p>
-          <a href="#" class="text-uppercase">Read More</a>
+          <button type="button" class="text-uppercase fw-bold">read more</button>
         </div>
         <div class="d-flex col-5 image-container">
           <img :src="image1" />
@@ -60,23 +60,22 @@ img {
   width: 300px;
   height: 300px;
 }
-.arrow{
+.arrow {
   font-size: 30px;
   color: $fas-color;
 }
-a {
-  text-decoration: none;
-  color: $text-color;
+button {
+  background-color: $jumbo-button;
   border: 2px solid $fas-color;
-  padding: 5px 10px 5px 10px;
+  padding: 10px 40px;
   margin-top: 30px;
 }
 a:hover {
   color: $text-color;
 }
-.fa-circle{
-    padding-left: 20px;
-    font-size: 10px;
-    color: $fas-color;
+.fa-circle {
+  padding-left: 20px;
+  font-size: 10px;
+  color: $fas-color;
 }
 </style>

@@ -6,7 +6,7 @@
           <h1>Working <strong>process</strong></h1>
         </div>
       </div>
-      <div class="row d-flex ">
+      <div class="row d-flex">
         <div class="svg-bg d-flex">
           <div
             class="process-container col-3 pt-3"
@@ -99,7 +99,7 @@ i {
 .process-container:nth-child(4) i {
   color: $process-icon4;
 }
-p{
-    font-size: 17px;
+p {
+  font-size: 17px;
 }
 </style>
