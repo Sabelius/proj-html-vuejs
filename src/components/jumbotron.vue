@@ -3,7 +3,7 @@
     <div class="container-fluid p-5">
       <div class="row">
         <div class="d-flex before col-2 align-items-center">
-          <i class="fas fa-chevron-circle-left"></i>
+          <i class="fas fa-chevron-circle-left arrow"></i>
         </div>
         <div class="slider col-3">
           <h1>Devotion that never <strong>ends</strong></h1>
@@ -20,7 +20,12 @@
           <img :src="image2" />
         </div>
         <div class="d-flex after col-2 align-items-center justify-content-end">
-          <i class="fas fa-chevron-circle-right"></i>
+          <i class="fas fa-chevron-circle-right arrow"></i>
+        </div>
+        <div class="dots d-flex col-12 justify-content-center pt-5">
+          <i class="fas fa-circle"></i>
+          <i class="fas fa-circle"></i>
+          <i class="fas fa-circle"></i>
         </div>
       </div>
     </div>
@@ -55,7 +60,7 @@ img {
   width: 300px;
   height: 300px;
 }
-.fas {
+.arrow{
   font-size: 30px;
   color: $fas-color;
 }
@@ -68,5 +73,10 @@ a {
 }
 a:hover {
   color: $text-color;
+}
+.fa-circle{
+    padding-left: 20px;
+    font-size: 10px;
+    color: $fas-color;
 }
 </style>
