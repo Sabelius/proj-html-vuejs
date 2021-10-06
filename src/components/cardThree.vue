@@ -30,6 +30,8 @@ export default {
 @import "../style/variables.scss";
 .bg-container{
     background-image: url("../img/h-2-background-1.jpg");
+    background-position: center;
+    background-size: cover;
 }
 h1{
     font-size: 50px;
