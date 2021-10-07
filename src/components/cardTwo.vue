@@ -1,32 +1,51 @@
 <template>
   <section>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-12 d-flex justify-content-center pt-5">
-          <h1>Working <strong>process</strong></h1>
-        </div>
-      </div>
-      <div class="row d-flex">
-        <div class="svg-bg d-flex">
-          <div
-            class="process-container col-3 pt-3"
-            v-for="element in elements"
-            :key="element.id"
-          >
-            <div class="d-flex justify-content-center">
-              <div
-                class="
-                  element-img
-                  d-flex
-                  align-items-center
-                  justify-content-center
-                "
-              >
-                <i :class="element.img"></i>
+        <div class="col-12">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 d-flex justify-content-center pt-5">
+                <h1>Working <strong>process</strong></h1>
               </div>
             </div>
-            <h4 class="text-center pt-2">{{ element.title }}</h4>
-            <p class="text-center">{{ element.subtitle }}</p>
+            <div class="row d-flex">
+              <div class="svg-bg d-flex">
+                <div
+                  class="process-container col-3 pt-3"
+                  v-for="element in elements"
+                  :key="element.id"
+                >
+                  <div class="d-flex justify-content-center">
+                    <div
+                      class="
+                        element-img
+                        d-flex
+                        align-items-center
+                        justify-content-center
+                      "
+                    >
+                      <i :class="element.img"></i>
+                    </div>
+                  </div>
+                  <h4 class="text-center pt-2">{{ element.title }}</h4>
+                  <p class="text-center">{{ element.subtitle }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 d-flex justify-content-end">
+          <div
+            class="
+              arrow-container
+              d-flex
+              justify-content-center
+              align-items-center
+              text-white
+            "
+          >
+            <i class="fas fa-arrow-up"></i>
           </div>
         </div>
       </div>
@@ -101,5 +120,14 @@ i {
 }
 p {
   font-size: 17px;
+}
+.arrow-container {
+  background-color: $date-news-color;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.fa-arrow-up {
+  font-size: 25px;
 }
 </style>

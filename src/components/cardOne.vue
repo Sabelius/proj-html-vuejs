@@ -1,13 +1,35 @@
 <template>
   <section>
-    <div class="container-fluid">
-      <div class="card-container d-flex">
-        <div class="card" v-for="card in cards" :key="card.id">
-          <img :src="card.imgUrl" />
-          <div class="text">
-          <h3>{{ card.title}}</h3>
-          <h4><em>{{ card.subtitle}}</em></h4>
-          </div>
+    <div class="card-container d-flex">
+      <div class="card" v-for="card in cards" :key="card.id">
+        <img :src="card.imgUrl" />
+        <div class="text">
+          <h3>{{ card.title }}</h3>
+          <h4>
+            <em>{{ card.subtitle }}</em>
+          </h4>
+        </div>
+        <div
+          class="
+            arrow-container
+            d-flex
+            justify-content-center
+            align-items-center
+            text-white
+          "
+        >
+          <i :class="card.img"></i>
+        </div>
+        <div
+          class="
+            arrow-container2
+            d-flex
+            justify-content-center
+            align-items-center
+            text-white
+          "
+        >
+          <i :class="card.img"></i>
         </div>
       </div>
     </div>
@@ -46,6 +68,7 @@ export default {
         },
         {
           imgUrl: img6,
+          img: "fas fa-arrow-up",
         },
       ],
     };
@@ -63,7 +86,7 @@ export default {
   cursor: pointer;
   width: calc(100% / 3);
 }
-.text{
+.text {
   position: absolute;
   top: 40%;
   padding: 30px;
@@ -71,9 +94,29 @@ export default {
   transform: scaleX(0);
   transform-origin: left;
 }
-.card:nth-child(4):hover .text{
+.card:nth-child(4):hover .text {
   transform: scaleX(1);
   transform-origin: left;
   transition: all 0.3s linear;
+}
+.card:nth-child(6) .arrow-container {
+  position: absolute;
+  top: 90%;
+  left: 94%;
+  background-color: $date-news-color;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.card:nth-child(6) .arrow-container2 {
+  position: absolute;
+  left: 94%;
+  background-color: $date-news-color;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.fa-arrow-up {
+  font-size: 25px;
 }
 </style>

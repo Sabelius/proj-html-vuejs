@@ -24,6 +24,21 @@
           </div>
         </div>
       </div>
+      <div class="row">
+        <div class="col-12 d-flex justify-content-end">
+          <div
+            class="
+              arrow-container
+              d-flex
+              justify-content-center
+              align-items-center
+              text-white
+            "
+          >
+            <i class="fas fa-arrow-up"></i>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -63,5 +78,14 @@ svg {
 }
 button:hover svg {
   fill: $period-news-color;
+}
+.arrow-container {
+  background-color: $date-news-color;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.fa-arrow-up {
+  font-size: 25px;
 }
 </style>

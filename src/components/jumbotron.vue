@@ -5,19 +5,25 @@
         <div class="d-flex before col-2 align-items-center">
           <i class="fas fa-chevron-circle-left arrow"></i>
         </div>
-        <div class="slider col-3">
+        <div class="slider col-4">
           <h1>Devotion that never <strong>ends</strong></h1>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
-            illo cupiditate architecto nostrum ex aut placeat odit accusantium
-            ea? Veniam ratione iure voluptates mollitia pariatur ut, distinctio
-            alias sapiente minima.
+            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+            consectetur, adipisci velit, sed quia non numquam eius modi.
           </p>
-          <button type="button" class="text-uppercase fw-bold">read more</button>
+          <button type="button" class="text-uppercase fw-bold">
+            read more
+          </button>
         </div>
-        <div class="d-flex col-5 image-container">
+        <div class="d-flex col-4 image-container">
+          <img :src="image3" class="small" />
+          <img :src="image7" class="small sm-seven" />
+          <img :src="image6" class="small sm-six" />
           <img :src="image1" />
           <img :src="image2" />
+          <img :src="image4" class="small sm-four" />
+          <img :src="image5" class="small" />
+          <img :src="image8" class="small sm-eight" />
         </div>
         <div class="d-flex after col-2 align-items-center justify-content-end">
           <i class="fas fa-chevron-circle-right arrow"></i>
@@ -35,6 +41,12 @@
 <script>
 import imgslider1 from "../img/h-2-slider-img-15.png";
 import imgslider2 from "../img/h-2-slider-img-16.png";
+import imgslider3 from "../img/short-slider-rev-1-img-2.png";
+import imgslider4 from "../img/short-slider-rev-1-img-6.png";
+import imgslider5 from "../img/short-slider-rev-1-img-7.png";
+import imgslider6 from "../img/short-slider-rev-1-img-8.png";
+import imgslider7 from "../img/short-slider-rev-1-img-10.png";
+import imgslider8 from "../img/h-2-slider-img-17.png";
 
 export default {
   name: "jumbotron",
@@ -42,6 +54,12 @@ export default {
     return {
       image1: imgslider1,
       image2: imgslider2,
+      image3: imgslider3,
+      image4: imgslider4,
+      image5: imgslider5,
+      image6: imgslider6,
+      image7: imgslider7,
+      image8: imgslider8,
     };
   },
 };
@@ -51,14 +69,30 @@ export default {
 @import "../style/variables.scss";
 
 .image-container {
-  padding-left: 200px;
+  padding-left: 50px;
 }
 h1 {
-  font-size: 50px;
+  font-size: 70px;
 }
 img {
   width: 300px;
   height: 300px;
+}
+.small {
+  width: 50px;
+  height: 50px;
+}
+.sm-seven {
+  margin-top: 150px;
+}
+.sm-six {
+  margin-top: 250px;
+}
+.sm-four {
+  margin-top: 120px;
+}
+.sm-eight {
+  margin-top: 250px;
 }
 .arrow {
   font-size: 30px;

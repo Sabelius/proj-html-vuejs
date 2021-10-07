@@ -35,6 +35,7 @@
             </div>
           </div>
         </div>
+        <div class="col-12 d-flex justify-content-end pb-4 text-white"><i class="fas fa-arrow-up"></i></div>
       </div>
     </div>
   </section>
@@ -102,5 +103,9 @@ a {
 }
 a:hover{
   color: $text-color;
+}
+.fa-arrow-up{
+  font-size: 25px;
+  cursor: pointer;
 }
 </style>
