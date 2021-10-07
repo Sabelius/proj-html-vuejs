@@ -15,8 +15,12 @@
           <div class="pt-5 pb-5 button-container d-flex justify-content-center">
             <button type="button" class="text-uppercase fw-bold">
               contact
+              <div>
+                <svg width="15" viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="40" />
+                </svg>
+              </div>
             </button>
-            <div class="circle"></div>
           </div>
         </div>
       </div>
@@ -44,20 +48,20 @@ button {
   padding: 15px 45px;
   background-color: $contact-button;
   border: none;
-  position: absolute;
+  position: relative;
 }
 button:hover {
   color: $jumbo-button;
   background-color: $fas-color;
   transition: all 0.3s linear;
 }
-.circle{
-  height: 15px;
-  width: 15px;
-  border: 1px solid white;
-  border-radius: 50%;
-  margin: 35px;
-  position: relative;
-  left: 3%;
+svg {
+  position: absolute;
+  fill: none;
+  pointer-events: none;
+  left: 80%;
+}
+button:hover svg {
+  fill: $period-news-color;
 }
 </style>
