@@ -18,7 +18,7 @@
           <div class="news-image">
             <a :href="news.url"><img :src="news.img" /></a>
           </div>
-          <div class="title pt-3">
+          <div class="title pt-3 pb-5">
             <h2>{{ news.title }}</h2>
             <h6>
               <em>{{ news.signature }}</em>
