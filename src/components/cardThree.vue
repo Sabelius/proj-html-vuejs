@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="container-fluid">
-      <div class="row">
+      <div class="row pt-5 pb-5">
         <div class="col-12 text-center pt-5 bg-container">
           <h1 class="pt-5">Want to work with us? Send us <strong>a message!</strong></h1>
           <p class="pt-2">

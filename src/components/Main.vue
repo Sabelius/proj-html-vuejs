@@ -4,6 +4,7 @@
     <cardOne />
     <cardTwo />
     <cardThree />
+    <cardFour />
   </section>
 </template>
 
@@ -12,6 +13,7 @@ import jumbotron from "./jumbotron.vue";
 import cardOne from "./cardOne.vue";
 import cardTwo from "./cardTwo.vue";
 import cardThree from "./cardThree.vue";
+import cardFour from "./cardFour.vue";
 
 export default {
   name: "Main",
@@ -20,6 +22,7 @@ export default {
     cardOne,
     cardTwo,
     cardThree,
+    cardFour,
   },
 };
 </script>

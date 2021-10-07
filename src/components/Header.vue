@@ -80,7 +80,7 @@ a {
 }
 a:hover {
   color: $text-color;
-  text-decoration: underline;
+  text-decoration: 2px solid underline;
   text-decoration-color: $line-color;
 }
 </style>
