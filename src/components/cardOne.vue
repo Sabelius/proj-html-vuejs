@@ -3,7 +3,11 @@
     <div class="container-fluid">
       <div class="card-container d-flex">
         <div class="card" v-for="card in cards" :key="card.id">
-          <img :src="card.imgUrl"/>
+          <img :src="card.imgUrl" />
+          <div class="text">
+          <h3>{{ card.title}}</h3>
+          <h4><em>{{ card.subtitle}}</em></h4>
+          </div>
         </div>
       </div>
     </div>
@@ -34,6 +38,8 @@ export default {
         },
         {
           imgUrl: img4,
+          title: "Illustrations of novels",
+          subtitle: "Illustration",
         },
         {
           imgUrl: img5,
@@ -49,13 +55,25 @@ export default {
 
 <style lang="scss" scoped>
 @import "../style/variables.scss";
-.card-container{
-    flex-wrap: wrap;
-    width: 100%;
+.card-container {
+  flex-wrap: wrap;
+  width: 100%;
 }
-.card{
-cursor: pointer;
-width: calc(100% / 3);
-
+.card {
+  cursor: pointer;
+  width: calc(100% / 3);
+}
+.text{
+  position: absolute;
+  top: 40%;
+  padding: 30px;
+  background-color: $jumbo-button;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.card:nth-child(4):hover .text{
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: all 0.3s linear;
 }
 </style>
