@@ -5,14 +5,14 @@
         <div class="col-12">
           <div class="container">
             <div class="row">
-              <div class="col-12 d-flex justify-content-center pt-5">
+              <div class="col-12 d-flex justify-content-center pt-5 pb-5">
                 <h1>Working <strong>process</strong></h1>
               </div>
             </div>
-            <div class="row d-flex">
-              <div class="svg-bg d-flex">
+            <div class="row">
+              <div class="svg-bg d-flex justify-content-between">
                 <div
-                  class="process-container col-3 pt-3"
+                  class="process-container col-2 pt-1"
                   v-for="element in elements"
                   :key="element.id"
                 >
@@ -28,7 +28,7 @@
                       <i :class="element.img"></i>
                     </div>
                   </div>
-                  <h4 class="text-center pt-2">{{ element.title }}</h4>
+                  <h3 class="text-center pt-3"><strong>{{ element.title }}</strong></h3>
                   <p class="text-center">{{ element.subtitle }}</p>
                 </div>
               </div>
@@ -91,6 +91,11 @@ export default {
 
 <style lang="scss" scoped>
 @import "../style/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
+h1 strong {
+  font-family: "Courgette", cursive;
+}
 .svg-bg {
   background-image: url("../assets/svg-3.svg");
   background-position: top;
@@ -104,7 +109,7 @@ export default {
   height: 100px;
 }
 i {
-  font-size: 50px;
+  font-size: 35px;
 }
 .process-container:nth-child(1) i {
   color: $process-icon1;
@@ -118,8 +123,12 @@ i {
 .process-container:nth-child(4) i {
   color: $process-icon4;
 }
+h3 {
+  font-size: 20px;
+}
 p {
-  font-size: 17px;
+  font-size: 11px;
+  color: $subtitle-color;
 }
 .arrow-container {
   background-color: $date-news-color;

@@ -16,7 +16,7 @@
             <button type="button" class="text-uppercase fw-bold">
               contact
               <div>
-                <svg width="15" viewBox="0 0 100 100">
+                <svg width="20" viewBox="0 0 100 100">
                   <circle cx="50" cy="50" r="40" />
                 </svg>
               </div>
@@ -51,6 +51,8 @@ export default {
 
 <style lang="scss" scoped>
 @import "../style/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
 .bg-container {
   background-image: url("../img/h-2-background-1.jpg");
   background-position: center;
@@ -59,8 +61,11 @@ export default {
 h1 {
   font-size: 50px;
 }
+strong {
+  font-family: "Courgette", cursive;
+}
 button {
-  padding: 15px 45px;
+  padding: 10px 45px;
   background-color: $contact-button;
   border: none;
   position: relative;
@@ -74,6 +79,7 @@ svg {
   position: absolute;
   fill: none;
   pointer-events: none;
+  top: 59%;
   left: 80%;
 }
 button:hover svg {

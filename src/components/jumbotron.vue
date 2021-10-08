@@ -67,12 +67,16 @@ export default {
 
 <style lang="scss" scoped>
 @import "../style/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 
 .image-container {
   padding-left: 50px;
 }
 h1 {
   font-size: 70px;
+}
+strong {
+  font-family: "Courgette", cursive;
 }
 img {
   width: 300px;

@@ -6,12 +6,14 @@
           <a :href="logo.url"><img :src="logo.logoImg" /></a>
         </div>
         <div class="col-4">
-        <ul class="d-flex justify-content-between pt-2">
-          <li v-for="(element, index) in navElements" :key="index">
-            <a :href="element.url" class="text-uppercase">{{ element.text }}</a>
-          </li>
-          <a :href="navMenuButton.url"><img :src="navMenuButton.button" /></a>
-        </ul>
+          <ul class="d-flex justify-content-between pt-2">
+            <li v-for="(element, index) in navElements" :key="index">
+              <a :href="element.url" class="text-uppercase">{{
+                element.text
+              }}</a>
+            </li>
+            <a :href="navMenuButton.url"><img :src="navMenuButton.button" /></a>
+          </ul>
         </div>
       </nav>
     </div>

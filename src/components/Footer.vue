@@ -17,8 +17,11 @@
                 <h6>{{ contact.email }}</h6>
                 <h6>{{ contact.number }}</h6>
               </div>
-              <div class="home col-3 pt-3" v-for="position in footerPosition"
-                :key="position.id">
+              <div
+                class="home col-3 pt-3"
+                v-for="position in footerPosition"
+                :key="position.id"
+              >
                 <h6>{{ position.address }}</h6>
                 <h6>{{ position.position }}</h6>
               </div>
@@ -35,7 +38,9 @@
             </div>
           </div>
         </div>
-        <div class="col-12 d-flex justify-content-end pb-4 text-white"><i class="fas fa-arrow-up"></i></div>
+        <div class="col-12 d-flex justify-content-end pb-4 text-white">
+          <i class="fas fa-arrow-up"></i>
+        </div>
       </div>
     </div>
   </section>
@@ -101,10 +106,10 @@ li {
 a {
   color: $text-color;
 }
-a:hover{
+a:hover {
   color: $text-color;
 }
-.fa-arrow-up{
+.fa-arrow-up {
   font-size: 25px;
   cursor: pointer;
 }

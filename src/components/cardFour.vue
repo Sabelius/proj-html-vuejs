@@ -11,7 +11,9 @@
             <div class="date d-flex justify-content-center">
               <h2 class="pt-1">{{ news.date }}</h2>
             </div>
-            <div class="period d-flex justify-content-center align-items-center">
+            <div
+              class="period d-flex justify-content-center align-items-center"
+            >
               <h6>{{ news.dayMonth }}</h6>
             </div>
           </div>
@@ -72,6 +74,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "../style/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 
 .news-container {
   position: relative;
@@ -106,5 +109,6 @@ img {
 }
 .title h6 {
   font-size: 15px;
+  font-family: "Courgette", cursive;
 }
 </style>
